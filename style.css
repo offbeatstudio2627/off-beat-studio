@@ -160,3 +160,9 @@ section.tarjetas{
     justify-content: center;
     gap: 20px;
 }
+
+section.tarjetas p{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
