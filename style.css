@@ -84,7 +84,7 @@ p.inicio{
 
 img.inicio{
     float: left;
-    height: 500px;
+    height: 450px;
     margin-left: auto;
     padding: 0px 0px 0px 15px;
 }
@@ -95,7 +95,7 @@ div.inicio{
 
 div.inicio a{
     font-family: 'Inter', sans-serif;
-    color: #2a2925;
+    color: #0A0A0A;
     text-decoration: none;
     border-radius: 20px;
     padding: 10px;
