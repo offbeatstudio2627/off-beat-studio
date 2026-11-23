@@ -1,68 +1,23 @@
+/* =========================================
+   1. IMPORTS Y CONFIGURACIÓN GLOBAL
+   ========================================= */
+   
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body{
     background-color: #2a2925;
-    margin: 0px;
-    min-height: 100vh;
+    color: #f4efe3;
     display: flex;
     flex-direction: column;
-}
-
-.logo{
-    height: 70px;
-    padding: 15px;
-}
-
-.eslogan{
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    color: #f4efe3;
+    margin: 0;
+    min-height: 100vh;
 }
 
-header{
-    align-items: center;
-    background-color: #0A0A0A;
-    display: flex;
-}
-
-header nav{
-    margin-left: auto;
-    margin-right: 15px;
-}
-
-nav a{
-    font-family: 'Inter', sans-serif;
-    color: #f4efe3;
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 10px;
-}
-
-nav a:hover{
-    font-family: 'Inter', sans-serif;
-    color: #f4efe3;
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #2a2925;
-}
-    
-#menu{
-    border-radius: 20px;
-    background-color: #2a2925;
-}
-
-section.inicio{
-    color: #f4efe3;
-    display: flex;
-}
-
-section{
-    padding: 20px 200px 30px 200px;
-    color: #f4efe3;
-}       
+/* =========================================
+   2. TIPOGRAFÍA
+   ========================================= */
 
 h1{
     font-family: 'Archivo Black', sans-serif;
@@ -70,43 +25,28 @@ h1{
     text-align: left;
 }
 
+h2{
+    color: #B8B2A3;
+    text-align: left;
+}
+
+h3{
+    color: #f4efe3;
+    font-weight: bold;
+    text-align: left;
+}
+
 p{
-    font-family: 'Inter', sans-serif;
     font-size: 15px;
     text-align: justify;
-}
-
-p.inicio{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    text-align: justify;
-}
-
-img.inicio{
-    float: left;
-    height: 450px;
-    margin-left: auto;
-    padding: 0px 0px 0px 15px;
-}
-
-div.inicio{
-    float: left;
-}
-
-div.inicio a{
-    font-family: 'Inter', sans-serif;
-    color: #0A0A0A;
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #D4AB47;
-    float: left;
-    margin-right: 15px;
 }
 
 li{
-    font-family: 'Inter', sans-serif;
     font-size: 15px;
+}
+
+small{
+    color: #B8B2A3;
 }
 
 .G{
@@ -114,55 +54,135 @@ li{
     font-family: 'Archivo Black', sans-serif;
 }
 
-h2{
-    color: #B8B2A3;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-}
+/* =========================================
+   3. HEADER Y NAVEGACIÓN
+   ========================================= */
 
-h3{
-    color: #f4efe3;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-}
-
-footer{
-    margin-top: auto;
-    padding: 15px;
+header{
+    align-items: center;
     background-color: #0A0A0A;
-    color: #f4efe3;
-    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
-footer a{
-    font-family: 'Inter', sans-serif;
+header a{
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    height: 70px;
+    padding: 5px;
+}
+
+.eslogan{
+    flex: auto;
+    font-size: 15px;
+    margin: 10px 15px;
+    text-align: left;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+nav a{
     color: #f4efe3;
+    margin: 5px 8px;
+    padding: 8px 12px;
     text-decoration: none;
 }
 
-small{
-    color: #B8B2A3;
-    font-family: 'Inter', sans-serif;   
+nav a:hover{
+    background-color: #2a2925;
+    border-radius: 20px;
+}
+
+#menu{
+    background-color: #2a2925;
+    border-radius: 20px;
+}
+
+/* =========================================
+   4. SECCIONES GENERALES E INICIO
+   ========================================= */
+
+section{
+    padding: 20px 20%;
+}
+
+section.inicio{
+    display: flex;
+}
+
+p.inicio{
+    font-size: 18px;
+    text-align: justify;
+}
+
+img.inicio{
+    float: left;
+    height: 400px;
+    margin-left: auto;
+    padding-left: 25px;
+}
+
+div.inicio{
+    float: left;
+}
+
+div.inicio a{
+    background-color: #D4AB47;
+    border-radius: 25px;
+    color: #0A0A0A;
+    float: left;
+    margin-right: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* =========================================
+   5. SECCIÓN TARJETAS
+   ========================================= */
+
+section.tarjetas{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 article{
     background: #45443d;
-    border-top: 5px solid #D4AB47;
     border-radius: 8px;
+    border-top: 5px solid #D4AB47;
+    height: auto;
     padding: 15px;
     width: 300px;
-    height: 160px;
-}
-
-section.tarjetas{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
 
 section.tarjetas p{
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
     text-align: left;
+}
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+
+footer{
+    background-color: #0A0A0A;
+    height: 150px;
+    margin-top: auto;
+    padding: 15px;
+}
+
+footer a{
+    color: #f4efe3;
+    text-decoration: none;
 }
